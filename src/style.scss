@@ -40,6 +40,7 @@ $accent-color: #f39b6d;
 // Base Style Override
 
 body {
+    position: relative;
     font-family: Roboto;
     font-size: 16px;
 }
@@ -59,6 +60,54 @@ h1, h2, p {
 }
 
 // Components
+
+header {
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 16;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .brand {
+        font-size: 36px;
+        font-weight:500;
+    }
+
+    .top-menu {
+        display: flex;
+        align-items: center;
+        margin:0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            margin: 0;
+            padding: 0;
+            a  {
+                padding: 6px 12px;
+                font-size: 18px;
+                font-weight: 500;
+                text-decoration: none;
+                display: inline-block;
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+
+    }
+}
 
 .album-info {
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.13);
@@ -153,6 +202,7 @@ h1, h2, p {
         border-top: 1px solid #e8e8e8;
 
         button {
+            cursor: pointer;
             text-align: center;
             color: $accent-color;
             display: block;
@@ -162,6 +212,20 @@ h1, h2, p {
     }
     &:hover {
         box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.43);
+    }
+}
+
+.artist-card {
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.12);
+
+    .content {
+        padding: 16px;
+
+        h4 {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
     }
 }
 
@@ -226,6 +290,18 @@ h1, h2, p {
 
     .meta {
         color: $accent-color;
+    }
+}
+
+.main {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.sidebar {
+    .title {
+        font-size: 20px;
+        border: none;
+        padding: 0;
     }
 }
 

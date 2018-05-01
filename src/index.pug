@@ -4,6 +4,7 @@ block settings
   - description = '';
 
 block content
+    include ./_component/header/header.pug
     section.section.hero
         .overlay
         .row
@@ -16,7 +17,7 @@ block content
                     span.genre Hip-Hop
     .page-wrapper
         .row
-            .grid-8
+            .grid-9.main
                 .story
                     h2.title Istwa
                     p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer iaculis metus vitae luctus rutrum. Integer mollis felis nec tortor tempus, id tincidunt elit fringilla. Vivamus pellentesque nisi at ultricies condimentum. Etiam eros felis, egestas nec nibh non, venenatis congue justo. Suspendisse elementum diam quis orci iaculis auctor. In non feugiat mauris, in iaculis ex. Nulla ac risus at enim viverra accumsan. Aenean et magna ipsum. Vivamus suscipit metus non ipsum consequat, id tincidunt eros faucibus. Vivamus euismod urna sit amet orci euismod luctus. In id turpis in urna cursus vulputate ac eu odio. Mauris venenatis augue enim. Donec eu sem ex.  p Fusce rutrum, ligula eu ultrices semper, velit purus posuere enim, non suscipit justo eros in risus. Mauris vulputate nunc eget velit auctor, ut pretium nisi cursus. Aliquam sit amet est ultrices, efficitur magna quis, molestie ex. Sed pretium nisi a elit lobortis ullamcorper vel eget lacus. Curabitur vel egestas justo, sed feugiat urna. Pellentesque rhoncus velit vel pretium tempus. Nullam ornare feugiat nisi, ac efficitur libero gravida suscipit. Quisque ornare sed turpis at gravida. Maecenas accumsan efficitur ante, non efficitur tellus blandit non. Pellentesque id metus ac elit commodo consectetur ac vitae arcu.
@@ -47,6 +48,12 @@ block content
                                 td 4.24
                         .footer
                             button Afiche mwens
+            .grid-3.sidebar
+                h3.title Lòt atis/gwoup
+                .list
+                    .artist-card: a(href="#")
+                        .thumbnail: img.img--max(src="asset/image/group.jpg")
+                        .content: h4 Rockfam
     footer.footer.txt--center
         h2.brand Kamizay
         h4.description Yon pwodwi Bouyon Teknolojik
